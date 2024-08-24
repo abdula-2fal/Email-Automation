@@ -21,6 +21,8 @@ function sendEmails() {
         var textFromColumnC = data[i][2];
 
         var message = `your email body
+Username: ${textFromColumnA}
+Password: ${textFromColumnC}
 `;
         // Send the email
         GmailApp.sendEmail(emailAddress, subject, message);
